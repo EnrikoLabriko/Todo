@@ -19,6 +19,8 @@ gulp.task('jade', function() {
         .pipe(gulp.dest('build/templates'));
 });
 
+
+
 gulp.task('stylus', function() {
     gulp.src('res/stylus/*.styl')
         .pipe(stylus())
@@ -29,3 +31,10 @@ gulp.task('stylus', function() {
         .pipe(csso())
         .pipe(gulp.dest('build/css'));
 });
+
+
+
+gulp.task('default', [
+    'jade',
+    'stylus'
+]);
