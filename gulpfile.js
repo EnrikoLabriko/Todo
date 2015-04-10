@@ -5,10 +5,12 @@ var gulp = require('gulp'),
 
 
 
-gulp.task('default', function() {
+gulp.task('jadeg', function() {
     return gulp.src('res/jade/*.jade')
-        .pipe(jade())
-        .pipe(stylus())
-        .pipe(csso())
-        .pipe(gulp.dest('dest/'));
+        .pipe(jade({
+            pretty: true
+        }))
+        //.pipe(stylus())
+        //.pipe(csso())
+        .pipe(gulp.dest('dev/'));
 });
