@@ -2,16 +2,24 @@
   "name": "todo",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp": "^3.8.11"
-  },
-  "devDependencies": {
-    "gulp": "^3.8.11"
-  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EnrikoLabriko/Todo.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnrikoLabriko/Todo/issues"
+  },
+  "homepage": "https://github.com/EnrikoLabriko/Todo",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-csso": "^1.0.0",
+    "gulp-jade": "^1.0.0",
+    "gulp-stylus": "^2.0.1"
+  }
 }
