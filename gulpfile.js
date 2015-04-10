@@ -5,12 +5,27 @@ var gulp = require('gulp'),
 
 
 
-gulp.task('jadeg', function() {
-    return gulp.src('res/jade/*.jade')
+gulp.task('jade', function() {
+    gulp.src('res/jade/*.jade')
         .pipe(jade({
             pretty: true
         }))
-        //.pipe(stylus())
-        //.pipe(csso())
-        .pipe(gulp.dest('dev/'));
+        .pipe(gulp.dest('dev/templates'));
+
+    gulp.src('res/jade/*.jade')
+        .pipe(jade({
+            pretty: false
+        }))
+        .pipe(gulp.dest('build/templates'));
+});
+
+gulp.task('stylus', function() {
+    gulp.src('res/stylus/*.styl')
+        .pipe(stylus())
+        .pipe(gulp.dest('dev/css'));
+
+    gulp.src('res/stylus/*.styl')
+        .pipe(stylus())
+        .pipe(csso())
+        .pipe(gulp.dest('build/css'));
 });
