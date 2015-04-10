@@ -1,0 +1,12 @@
+{
+  "name": "todo",
+  "version": "0.0.0",
+  "authors": [
+    "Alexander Telyatnikov <alexandertel@yandex.ru>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "~0.13.1",
+    "jquery": "~2.1.3"
+  }
+}
